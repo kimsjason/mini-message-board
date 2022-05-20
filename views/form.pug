@@ -2,6 +2,7 @@ extends layout
 
 block content 
     h1=title 
+    a(class="messages" href="/") Back to Messages
     form(method="POST" action="/new")
         label(for="messageUser") Name
         input(type="text" id="message-user" name="messageUser")
